@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="TestComponents.Listeners"/>
+    </listeners>
+    
+    <test name="Open Career">
+        <groups>
+            <run>
+                <exclude name = "Smoke"/>
+            </run>
+        </groups>
+
+        <classes>
+            <class name="Test.OpenCareerTest">
+                <methods>
+                    <exclude name="Close.*"/> <!-- .* is a regular expression to indicate starts with -->
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
