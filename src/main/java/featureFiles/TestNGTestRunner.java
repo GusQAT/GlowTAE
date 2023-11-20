@@ -7,5 +7,5 @@ import io.cucumber.testng.CucumberOptions;
 monochrome = true, plugin = {"html:target/cucumber.html"})
 
 public class TestNGTestRunner extends AbstractTestNGCucumberTests {
-
+//To execute it
 }
